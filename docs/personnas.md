@@ -1,6 +1,6 @@
 # Personas  
 
-## Persona 1 – Léa, Vétérinaire  
+## Persona 1 – Léa, Assistante vétérinaire  
 ### Objectifs  
 - Accéder rapidement aux informations essentielles d’un animal.  
 - Ne plus chercher les carnets papier dans le cabinet.  
