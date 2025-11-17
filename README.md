@@ -20,18 +20,16 @@ Ce projet consiste à réaliser une interface web permettant de consulter le car
 
 ## 3. Analyse & Conception
 ### GitHub Project
-<p align="center">
-  <img src="https://github.com/orgs/2025-10-CDA-ECO-P6/projects/5/views/1" width="750">
-</p>
+[Git Hub Project](https://github.com/orgs/2025-10-CDA-ECO-P6/projects/5/views/1)
 
 ### Personas
 [Voir le document Personas](./docs/personnas.md)
 
 ### User Journey
-[Voir le document User Journey](./docs/userjourney.JPG)
+[User Journey](./docs/userjourney.JPG)
 
 ### Use Cases (UML)
-![usecase]
+![Use Case](./docs/usecase.JPG)
 
 ### Dictionnaire de données
 ![dictionnairededonnees]
