@@ -31,11 +31,14 @@ Ce projet consiste à réaliser une interface web permettant de consulter le car
 ### Use Cases (UML)
 ![Use Case](./docs/usecase.JPG)
 
-### Dictionnaire de données
-![dictionnairededonnees]
-
 ### MCD (Modèle Conceptuel de Données)
-![mcd]
+![Modèle Conceptuel de Données](./docs/mcd.JPG)
+
+### Dictionnaire de données
+![Dictionnaire de données](./docs/datadictionary.png)
 
 ### JSON mocké
 Les données fournies sont cohérentes avec le dictionnaire et le MCD. Elles servent de base pour l’affichage dynamique.
+
+### Maquette
+![Maquette figma](./docs/maquettes/maquette.JPG)

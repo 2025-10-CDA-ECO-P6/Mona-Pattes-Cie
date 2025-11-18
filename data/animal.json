@@ -1,0 +1,78 @@
+{
+  "animal": {
+    "id": 1,
+    "nom": "Moka",
+    "espece": "Chat",
+    "race": "Persan",
+    "date_naissance": "2020-04-12",
+    "age": 4,
+    "num_puce": "250268780945312",
+    "proprietaire": "Mme Dupont",
+    "poids": 4.2,
+    "taille": 28,
+    "photo": "images/moka.jpg",
+
+    "vaccinations": [
+      {
+        "id_vaccination": 101,
+        "nom_vaccin": "Purevax RCP",
+        "date_vaccination": "2023-04-15",
+        "date_rappel": "2024-04-15",
+        "commentaire": "RAS"
+      },
+      {
+        "id_vaccination": 102,
+        "nom_vaccin": "Purevax FeLV",
+        "date_vaccination": "2023-04-15",
+        "date_rappel": "2024-04-15",
+        "commentaire": "Conseillé pour les chats sortant"
+      }
+    ],
+
+    "traitements": [
+      {
+        "id_traitement": 201,
+        "nom_traitement": "Antibiotique X",
+        "posologie": "1 comprimé/jour pendant 5 jours",
+        "date_debut": "2024-01-05",
+        "date_fin": "2024-01-10",
+        "remarque": "Bonne réponse au traitement"
+      },
+      {
+        "id_traitement": 202,
+        "nom_traitement": "Vermifuge Drontal",
+        "posologie": "1 comprimé en dose unique",
+        "date_debut": "2023-12-01",
+        "date_fin": "2023-12-01",
+        "remarque": "Traitement préventif"
+      }
+    ],
+
+    "consultations": [
+      {
+        "id_visite": 301,
+        "date_visite": "2024-01-05",
+        "motif": "Toux persistante",
+        "diagnostic": "Bronchite légère",
+        "observation": "Surveiller pendant 48h",
+        "veterinaire": "Dr Martin"
+      },
+      {
+        "id_visite": 302,
+        "date_visite": "2023-04-15",
+        "motif": "Vaccination annuelle",
+        "diagnostic": "Chat en bonne santé",
+        "observation": "Poids stable, comportement normal",
+        "veterinaire": "Léa (Assistante)"
+      },
+      {
+        "id_visite": 303,
+        "date_visite": "2022-10-10",
+        "motif": "Consultation préventive",
+        "diagnostic": "RAS",
+        "observation": "Recommandation : vermifuge tous les 3 mois",
+        "veterinaire": "Dr Martin"
+      }
+    ]
+  }
+}
