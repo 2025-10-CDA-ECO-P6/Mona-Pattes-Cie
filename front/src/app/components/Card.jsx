@@ -1,10 +1,11 @@
 import styles from "./Card.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBirthdayCake, faWeightScale, faRuler, faPaw } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function Card({ animal }) {
   return (
-    <div className={styles.card}>
+      <Link href={`/animaux/${animal.id}`} className={styles.card}>
       <img src={animal.photo} alt={animal.nom} className={styles.photo} />
 
       <div className={styles.info}>
@@ -36,6 +37,6 @@ export default function Card({ animal }) {
 
         <button className={styles.btn}>Voir la fiche</button>
       </div>
-    </div>
+      </Link>
   );
 }

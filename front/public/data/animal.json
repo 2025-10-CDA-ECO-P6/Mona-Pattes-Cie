@@ -10,7 +10,7 @@
     "proprietaire": "Mme Dupont",
     "poids": 4.2,
     "taille": 28,
-    "photo": "images/placeholder.jpg",
+    "photo": "/images/placeholder.jpg",
     "vaccinations": [
       {
         "id_vaccination": 101,
@@ -83,7 +83,7 @@
     "proprietaire": "M. Lambert",
     "poids": 18.4,
     "taille": 52,
-    "photo": "images/placeholder1.jpg",
+    "photo": "/images/placeholder1.jpg",
     "vaccinations": [
       {
         "id_vaccination": 201,

@@ -8,7 +8,7 @@ import Filter from "../components/Filter";
 export default async function AnimauxPage() {
   let data = await fetch("http://localhost:3000/data/animal.json");
   let posts = await data.json();
-  
+
   return (
     <>
       <div className={styles.welcome}>
@@ -31,11 +31,7 @@ export default async function AnimauxPage() {
       <SearchBar />
 
       <Filter
-        filters={[
-          "Prochaine consultation",
-          "Vaccin à venir",
-          "Urgence",
-        ]}
+        filters={["Prochaine consultation", "Vaccin à venir", "Urgence"]}
       />
       {/* affichage json en brut DEBUUG */}
       {/* <pre>{JSON.stringify(posts, null, 2)}</pre> */}
@@ -43,7 +39,7 @@ export default async function AnimauxPage() {
         <div className={styles.grid}>
           {[...posts, ...posts, ...posts, ...posts, ...posts].map(
             (animal, index) => (
-              <Card key={index} animal={animal} />
+              <Card key={animal.id} animal={animal} />
             )
           )}
         </div>
