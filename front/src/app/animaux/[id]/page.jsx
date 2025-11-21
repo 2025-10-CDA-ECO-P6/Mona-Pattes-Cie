@@ -6,6 +6,7 @@ import {
   faRuler,
   faPaw,
 } from "@fortawesome/free-solid-svg-icons";
+import Vaccination from "@/app/components/Vaccination";
 
 export default async function AnimalPage({ params }) {
   const { id } = await params;
@@ -21,19 +22,15 @@ export default async function AnimalPage({ params }) {
 
   return (
     <>
-      <h1 className={styles.titleAnimal}>
-        <span className={styles.bold}>Carnet :</span>
-        <span className={styles.light}> {animal.nom}</span>
-      </h1>
       <div className={styles.animal}>
         <div className={styles.animalCard}>
           <div className={styles.left}>
             <p className={styles.info}>
+              <span className={styles.name}>{animal.nom}</span>
+              <span className={styles.dot}> • </span>
               <span className={styles.species}>{animal.espece}</span>
               <span className={styles.dot}> • </span>
               <span className={styles.breed}>{animal.race}</span>
-              <span className={styles.dot}> • </span>
-              <span className={styles.name}>{animal.nom}</span>
             </p>
             <br></br>
             <div className={styles.carac}>
@@ -83,7 +80,11 @@ export default async function AnimalPage({ params }) {
           </div>
         </div>
       </div>
-      <div className={styles.container}></div>
+      <div className={styles.detailsSection}>
+        <Vaccination vaccins={animal.vaccinations} />
+        <Vaccination vaccins={animal.vaccinations} />
+        <Vaccination vaccins={animal.vaccinations} />
+      </div>
     </>
   );
 }

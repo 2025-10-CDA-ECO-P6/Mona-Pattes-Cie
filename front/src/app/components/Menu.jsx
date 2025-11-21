@@ -6,6 +6,7 @@ import {
   faSearch,
   faSignOutAlt,
   faArrowLeft,
+  faCalendar,
 } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./Menu.module.css";
@@ -19,6 +20,8 @@ export default function Menu() {
         </Link>
 
         <FontAwesomeIcon icon={faSearch} className={styles.icon} />
+
+        <FontAwesomeIcon icon={faCalendar} className={styles.icon} />
 
         <FontAwesomeIcon icon={faSignOutAlt} className={styles.icon} />
       </div>
