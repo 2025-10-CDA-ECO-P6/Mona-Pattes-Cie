@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pattes & Cie – Frontend
+Carnet de santé digital pour clinique vétérinaire
 
-## Getting Started
-
-First, run the development server:
-
+## Installation & lancement
+1. Cloner le projet  -> branch develop 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/2025-10-CDA-ECO-P6/Mona-Pattes-Cie.git  
+cd Mona-Pattes-Cie/front  
+```
+2. Installer les dépendances
+```bash
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Lancer l’environnement de développement
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Arborescence du projet  
+```bash
+src/app
+├── animaux
+│   ├── [id]
+│   │   ├── page.jsx
+│   │   └── page.module.css
+│   ├── page.jsx
+│   └── page.module.css
+├── components
+│   ├── Button.jsx
+│   ├── Button.module.css
+│   ├── Card.jsx
+│   ├── Card.module.css
+│   ├── Consultation.jsx
+│   ├── Consultation.module.css
+│   ├── Filter.jsx
+│   ├── Filter.module.css
+│   ├── Menu.jsx
+│   ├── Menu.module.css
+│   ├── SearchBar.jsx
+│   ├── SearchBar.module.css
+│   ├── Treatment.jsx
+│   ├── Treatment.module.css
+│   ├── Vaccination.jsx
+│   └── Vaccination.module.css
+├── favicon.ico
+├── globals.css
+├── layout.js
+├── page.js
+└── page.module.css
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Structure générale
+5.1 /animaux 
+- Liste des animaux  
+- Affichage des cartes  
+- Barre de recherche  
+- Filtrage par catégories  
 
-## Learn More
+5.2 /animaux/[id]
+- Fiche complète d’un animal
+- Vaccinations
+- Consultations
+- Traitements
+- Informations générales
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5.3 components/
+Composants réutilisables :  
+- Card : carte d’animal pour liste  
+- Menu : barre de navigation  
+- Filter : filtres sur la homepage (prochaine consultation, liste alphabétique)  
+- Vaccination, Consultation, Treatment : composants séparés  
+- SearchBar : barre de recherche (non fonctionnel)  

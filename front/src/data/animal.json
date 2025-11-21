@@ -144,5 +144,173 @@
         "veterinaire": "Dr Martin"
       }
     ]
+  },
+  {
+    "id": 3,
+    "nom": "Snow",
+    "espece": "Lapin",
+    "race": "Angora",
+    "date_naissance": "2021-06-18",
+    "age": 3,
+    "num_puce": "LAP-556788",
+    "proprietaire": "Mme Caron",
+    "poids": 1.8,
+    "taille": 20,
+    "photo": "/images/placeholder2.jpg",
+    "vaccinations": [
+      {
+        "id_vaccination": 301,
+        "nom_vaccin": "Nobivac Myxo-RHD",
+        "date_vaccination": "2024-03-01",
+        "date_rappel": "2025-03-01",
+        "commentaire": "Vaccin annuel"
+      }
+    ],
+    "traitements": [
+      {
+        "id_traitement": 401,
+        "nom_traitement": "Antiparasitaire Stronghold",
+        "posologie": "1 pipette",
+        "date_debut": "2023-11-10",
+        "date_fin": "2023-11-10",
+        "remarque": "Traitement préventif"
+      }
+    ],
+    "consultations": [
+      {
+        "id_visite": 501,
+        "date_visite": "2024-03-01",
+        "motif": "Vaccination",
+        "diagnostic": "RAS",
+        "observation": "Animal calme",
+        "veterinaire": "Dr Martin"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nom": "Luna",
+    "espece": "Chat",
+    "race": "Siamois",
+    "date_naissance": "2018-11-11",
+    "age": 6,
+    "num_puce": "250269778123444",
+    "proprietaire": "M. Garcia",
+    "poids": 3.5,
+    "taille": 27,
+    "photo": "/images/placeholder4.jpg",
+    "vaccinations": [
+      {
+        "id_vaccination": 401,
+        "nom_vaccin": "Purevax RCP",
+        "date_vaccination": "2023-12-10",
+        "date_rappel": "2024-12-10",
+        "commentaire": "RAS"
+      }
+    ],
+    "traitements": [
+      {
+        "id_traitement": 501,
+        "nom_traitement": "Anti-puce Frontline",
+        "posologie": "1 pipette/mois",
+        "date_debut": "2024-01-01",
+        "date_fin": "2024-12-31",
+        "remarque": "Prévention parasites"
+      }
+    ],
+    "consultations": [
+      {
+        "id_visite": 601,
+        "date_visite": "2024-05-20",
+        "motif": "Perte d'appétit",
+        "diagnostic": "Stomatite légère",
+        "observation": "Traitement anti-inflammatoire",
+        "veterinaire": "Dr Martin"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nom": "Tango",
+    "espece": "Chien",
+    "race": "Golden Retriever",
+    "date_naissance": "2017-03-22",
+    "age": 7,
+    "num_puce": "250268990123789",
+    "proprietaire": "Mme Laurent",
+    "poids": 29.3,
+    "taille": 56,
+    "photo": "/images/placeholder5.jpg",
+    "vaccinations": [
+      {
+        "id_vaccination": 501,
+        "nom_vaccin": "Nobivac CHP",
+        "date_vaccination": "2023-07-10",
+        "date_rappel": "2024-07-10",
+        "commentaire": "RAS"
+      }
+    ],
+    "traitements": [
+      {
+        "id_traitement": 601,
+        "nom_traitement": "Anti-inflammatoire",
+        "posologie": "1 comprimé/jour 10 jours",
+        "date_debut": "2024-03-12",
+        "date_fin": "2024-03-22",
+        "remarque": "Douleur articulaire"
+      }
+    ],
+    "consultations": [
+      {
+        "id_visite": 701,
+        "date_visite": "2026-03-12",
+        "motif": "Boiterie",
+        "diagnostic": "Arthrose débutante",
+        "observation": "Repos + traitement",
+        "veterinaire": "Dr Martin"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nom": "Pepper",
+    "espece": "Furet",
+    "race": "Furet domestique",
+    "date_naissance": "2022-09-01",
+    "age": 2,
+    "num_puce": "FER-112233",
+    "proprietaire": "Mme Rousseau",
+    "poids": 1.2,
+    "taille": 15,
+    "photo": "/images/placeholder6.jpg",
+    "vaccinations": [
+      {
+        "id_vaccination": 601,
+        "nom_vaccin": "Nobivac Peste Desc.",
+        "date_vaccination": "2024-01-25",
+        "date_rappel": "2025-01-25",
+        "commentaire": "RAS"
+      }
+    ],
+    "traitements": [
+      {
+        "id_traitement": 701,
+        "nom_traitement": "Antiparasitaire",
+        "posologie": "1 dose",
+        "date_debut": "2023-10-10",
+        "date_fin": "2023-10-10",
+        "remarque": "Traitement extérieur"
+      }
+    ],
+    "consultations": [
+      {
+        "id_visite": 801,
+        "date_visite": "2024-01-25",
+        "motif": "Vaccination",
+        "diagnostic": "RAS",
+        "observation": "Animal actif",
+        "veterinaire": "Léa (Assistante)"
+      }
+    ]
   }
 ]

@@ -1,0 +1,92 @@
+.card {
+    background: #f5f5f8;
+    padding: 20px;
+    border-radius: 16px;
+    width: 62%;
+    margin: 12px;
+    color: black;
+    margin: 12px auto;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    color: black;
+}
+
+.comment {
+    font-style: italic;
+}
+
+.item {
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    position: relative;
+}
+
+.row {
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: black;
+}
+
+.date {
+    font-weight: 600;
+    margin-right: 6px;
+    color: black;
+}
+
+.name {
+    color: #444;
+    color: black;
+}
+
+.rappel {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.more {
+    background: none;
+    border: none;
+    color: #6e67ff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    float: right;
+    margin-top: 8px;
+}
+
+.details {
+    margin-top: 10px;
+    padding-left: 2px;
+    color: #444;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .card {
+        background: #f5f5f8;
+        padding: 20px;
+        border-radius: 16px;
+        width: 100%;
+        color: black;
+        margin: 12px auto;
+    }
+
+}

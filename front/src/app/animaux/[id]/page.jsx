@@ -9,14 +9,12 @@ import {
 import Vaccination from "@/app/components/Vaccination";
 import Treatment from "@/app/components/Treatment";
 import data from "@/data/animal.json";
+import Consultation from "@/app/components/Consultation";
 
 export default async function AnimalPage({ params }) {
   const { id } = await params;
 
-  const animal = data.find(
-    (item) => String(item.id) === String(id)
-  );
-
+  const animal = data.find((item) => String(item.id) === String(id));
 
   return (
     <>
@@ -81,7 +79,7 @@ export default async function AnimalPage({ params }) {
       <div className={styles.detailsSection}>
         <Vaccination vaccins={animal.vaccinations} />
         <Treatment traitements={animal.traitements} />
-        <Vaccination vaccins={animal.vaccinations} />
+        <Consultation consultations={animal.consultations} />
       </div>
     </>
   );
