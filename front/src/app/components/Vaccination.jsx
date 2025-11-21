@@ -29,8 +29,7 @@ function VaccinItem({ v }) {
       {open && (
         <div className={styles.details}>
           {v.date_rappel && (
-            <div className={styles.rappel}>
-              
+            <div className={styles.rappel}>        
               • Rappel : <strong>{v.date_rappel}</strong>
             </div>
           )}

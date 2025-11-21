@@ -7,18 +7,16 @@ import {
   faPaw,
 } from "@fortawesome/free-solid-svg-icons";
 import Vaccination from "@/app/components/Vaccination";
+import Treatment from "@/app/components/Treatment";
+import data from "@/data/animal.json";
 
 export default async function AnimalPage({ params }) {
   const { id } = await params;
 
-  let data = await fetch("http://localhost:3000/data/animal.json");
-  let posts = await data.json();
+  const animal = data.find(
+    (item) => String(item.id) === String(id)
+  );
 
-  const animal = posts.find((animal) => String(animal.id) === String(id));
-
-  if (!animal) {
-    return <div>Animal introuvable</div>;
-  }
 
   return (
     <>
@@ -82,7 +80,7 @@ export default async function AnimalPage({ params }) {
       </div>
       <div className={styles.detailsSection}>
         <Vaccination vaccins={animal.vaccinations} />
-        <Vaccination vaccins={animal.vaccinations} />
+        <Treatment traitements={animal.traitements} />
         <Vaccination vaccins={animal.vaccinations} />
       </div>
     </>

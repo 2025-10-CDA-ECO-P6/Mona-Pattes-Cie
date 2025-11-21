@@ -4,10 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaw } from "@fortawesome/free-solid-svg-icons";
 import SearchBar from "../components/SearchBar";
 import Filter from "../components/Filter";
+import data from "@/data/animal.json";
 
 export default async function AnimauxPage() {
-  let data = await fetch("http://localhost:3000/data/animal.json");
-  let posts = await data.json();
 
   return (
     <>
@@ -31,13 +30,15 @@ export default async function AnimauxPage() {
       <SearchBar />
 
       <Filter
-        filters={["Prochaine consultation", "Vaccin à venir", "Urgence"]}
+        filters={["Liste", "Prochaine consultation", "Vaccin à venir"]}
       />
+
+
       {/* affichage json en brut DEBUUG */}
       {/* <pre>{JSON.stringify(posts, null, 2)}</pre> */}
       <div className={styles.container}>
         <div className={styles.grid}>
-          {[...posts, ...posts, ...posts, ...posts, ...posts].map(
+          {[...data].map(
             (animal, index) => (
               <Card key={animal.id} animal={animal} />
             )
